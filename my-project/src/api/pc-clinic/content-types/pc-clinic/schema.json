@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pc_clinics",
+  "info": {
+    "singularName": "pc-clinic",
+    "pluralName": "pc-clinics",
+    "displayName": "PC Clinic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal",
+      "min": 0
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
